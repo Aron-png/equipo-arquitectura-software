@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState, useEffect } from 'react';
 import Styles from './page.module.css';
 import Header from './components/Header';
@@ -7,9 +6,22 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { FaWrench, FaUtensils, FaBroom, FaShower, FaTree, FaLock, FaEllipsisH, FaShoppingCart } from 'react-icons/fa';
 
-function App() {
+import { NextResponse } from 'next/server';
+import { get } from '@vercel/edge-config';
+ 
+//export const config = { matcher: '/welcome' };
+ 
+export async function middleware() {
+  const greeting = await get('blue');
+  return NextResponse.json(greeting);
+}
 
+function App() {
   // Estado para almacenar las imágenes del carrusel
+  middleware().then((resultado) =>{
+    console.log('Resultado recibido:', resultado);
+  }
+  );
   const [imagenes, setImagenes] = useState([
     "https://via.placeholder.com/1200x300", 
     "https://via.placeholder.com/1200x300", 
