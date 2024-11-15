@@ -63,7 +63,7 @@ A tu puerta
                 </div>
                 <div className={Styles.nombres}>
                     <div className={Styles.nombre}>
-                    Aquiles Hiban
+                    Robert Hiban
                     </div>
                     <div>
                         Electricista - Cerrajero
