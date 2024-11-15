@@ -1,0 +1,105 @@
+
+.render{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: sans-serif;
+    flex-direction: column;
+    font-family: "Poppins";
+  
+}
+.barra{
+    display: flex;
+    height: 76px;
+    width: 100%;
+    background-color: black;
+}
+
+.page{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    
+}
+
+.container1{
+    display: flex;
+    height: 800px;
+    width: 100%;
+    flex-direction: row;
+    background-color:aquamarine ;
+    
+    
+}
+.container2{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    flex-direction: row;
+    background-color:brown ;
+    flex-direction: column;
+    align-items: center;
+    padding-top:30px ;
+}
+
+.s1{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color:green;
+}
+
+.s2{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color:orange;
+}
+
+
+.resultados{
+    display: flex;
+    height: 100%;
+    width: 55%;
+    background-color: beige;
+}
+
+.descrip{
+    display: flex;
+    height: 100%;
+    width: 30%;
+    background-color: brown;
+}
+
+.lower-banner {
+    background-color: #1976d2;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    align-items: end;
+  }
+
+  .font{
+    font-family: "Poppins", sans-serif;
+  }
+
+  .lower-banner .links {
+    margin-bottom: 10px;
+  }
+  
+  .lower-banner .links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .lower-banner .links a:hover {
+    text-decoration: underline;
+  }
+
