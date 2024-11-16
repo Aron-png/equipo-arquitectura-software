@@ -12,8 +12,8 @@ import { get } from '@vercel/edge-config';
 //export const config = { matcher: '/welcome' };
  
 export async function middleware() {
-  const greeting = await get('blue');
-  return NextResponse.json(greeting);
+  const greeting = await get('traffic-split');
+  return NextResponse.json(greeting.blue);
 }
 
 function App() {
